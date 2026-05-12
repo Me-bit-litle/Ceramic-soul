@@ -32,6 +32,10 @@
     color: $light;
     width: 90px;
     height: 40px;
+    &:disabled {
+        border: 1px solid $ui-disabled;
+        color: $ui-disabled;
+    }
 }
 
 @media screen and (min-width: 1200px) {
