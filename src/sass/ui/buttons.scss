@@ -15,7 +15,7 @@
     font-size: 16px;
     &:focus {
         outline: 1px solid $ceramic;
-        border: none;
+        border: 1px solid $ceramic;
     }
     &:disabled {
         border: 1px solid $ui-disabled;
@@ -35,6 +35,17 @@
     &:disabled {
         border: 1px solid $ui-disabled;
         color: $ui-disabled;
+    }
+}
+
+.btn-read {
+    @include button;
+    width: 145px;
+    height: 32px;
+    font-size: 14px;
+    &:focus {
+        outline: 1px solid $ceramic;
+        border: 1px solid $ceramic;
     }
 }
 
@@ -64,6 +75,17 @@
         &:hover {
         border: 1px solid $ceramic;
         color: $ceramic;
+        }
+    }
+    .btn-read {
+        &:active {
+            outline: 1px solid $ceramic;
+            border: 1px solid $ceramic;
+            color: $ceramic;
+        }
+        &:hover {
+            border: 1px solid $ceramic;
+            color: $ceramic;
         }
     }
 }
