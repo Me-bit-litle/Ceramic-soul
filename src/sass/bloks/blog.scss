@@ -1,11 +1,14 @@
 @use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
+@use "/src/sass/ui/titles.scss" as *;
 
 .blog {
-    padding-top: 50px;
+    padding: 50px 0 60px 0;
+
     &__title {
         margin-top: 60px;
     }
-    &__title-h3 {
+    &__title-card {
         text-align: left;
     }
     &__wrapper {
@@ -37,5 +40,43 @@
     &__img {
         max-inline-size: calc(100% + 2px);
         transform: translateX(-1px) translateY(-1px);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .blog {
+        &__wrapper {
+            padding: 25px 0 25px 25px;
+            position: relative;
+            @include angle-decoration;
+        } 
+        &__text {
+            margin-top: 15px;
+        }
+        &__data {
+            &-column {
+                gap: 0;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .blog {
+        &__wrapper {
+            gap: 60px;
+        }
+        &__card {
+            width: 520px;
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .blog {
+        &__card {
+            width: 670px;
+        }
     }
 }

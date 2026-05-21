@@ -34,7 +34,7 @@
         width: 100vw;
         height: 100vh;
         background-color: $light;
-        transition: transform 1.5s;
+        transition: transform 5s;
         &_active {
             transform: translateX(100%);
         }

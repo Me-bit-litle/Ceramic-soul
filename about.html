@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Website for Ceramic soul brand" />
     <meta name="author" content="Awesome student" />
-    <title>Ceramic soul</title>
+    <title>about</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,8 +15,7 @@
     />
   </head>
   <body>
-    <section class="promo">
-      <img src="/src/img/promo/potter.jpg" alt="potter" class="promo__potter" />
+    <section class="about">
       <div class="container">
         <div class="header">
           <div class="header__menu">
@@ -33,7 +32,11 @@
                     >catalog</a
                   >
                 </li>
-                <li><a href="#" class="header__menu-link">blog</a></li>
+                <li>
+                  <a href="http://localhost:5173/blog" class="header__menu-link"
+                    >blog</a
+                  >
+                </li>
                 <li><a href="#" class="header__menu-link">about</a></li>
               </ul>
             </nav>
@@ -55,64 +58,45 @@
                   >catalog</a
                 >
               </li>
-              <li><a href="#" class="header__link">blog</a></li>
+              <li>
+                <a href="http://localhost:5173/blog" class="header__link"
+                  >blog</a
+                >
+              </li>
               <li><a href="#" class="header__link">about</a></li>
             </ul>
           </nav>
         </div>
-        <div class="promo__wrapper">
-          <h1 class="title-h1-italic promo__title">
-            Make your dream come true <br />
-            or decorate your home
-          </h1>
-          <div class="promo__cta">
-            <img
-              src="/src/img/promo/ceramic-vase.jpg"
-              alt="ceramic-vase"
-              class="promo__img"
-            />
-            <button class="btn-default promo__btn">shop now</button>
+        <h1 class="title-h1 about__title">where it all began</h1>
+        <div class="pure-g about__wrapper">
+          <div class="pure-u-1 pure-u-xl-1-2 pure-u-xxl-1-2 about__img">
+            <img src="/src/img/about/crafts.jpg" alt="crafts" />
           </div>
-        </div>
-      </div>
-    </section>
-    <section class="activities">
-      <div class="container">
-        <h2 class="title-h2">create or buy</h2>
-        <div class="pure-g activities__wrapper">
-          <div class="pure-u-1 pure-u-xl-2-5 activities__col">
-            <h3 class="title-h3">our store</h3>
-            <img
-              src="/src/img/about/store.jpg"
-              alt="store"
-              class="activities__img"
-            />
-            <p class="activities__text activities__text">
-              Welcome to
-              <span class="activities__text_colored">Ceramic Soul</span>, where
-              each piece tells a story of craftsmanship and creativity. Our
-              handmade ceramics are thoughtfully designed and carefully crafted,
-              blending traditional techniques with modern aesthetics. Whether
-              you're looking for a unique gift or a special addition to your
-              home, our collection offers timeless pieces that bring warmth and
-              authenticity to any space.
-            </p>
-          </div>
-          <div class="pure-u-1 pure-u-xl-3-5 activities__col">
-            <h3 class="title-h3">our workshop</h3>
-            <img
-              src="/src/img/about/ceramic.jpg"
-              alt="store"
-              class="activities__img"
-            />
-            <p class="activities__text activities__text_fixed">
-              At
-              <span class="activities__text_colored">Ceramic Soul</span>
-              workshop, we don`t just craft ceramics—we invite you to get
-              hands-on and create your own unique pieces. Through our engaging
-              masterclasses, you`ll learn traditional techniques, work with
-              natural materials, and experience the joy of shaping clay into
-              something truly personal.
+          <div class="pure-u-1 pure-u-xl-1-2 pure-u-xxl-1-2">
+            <p class="about__text">
+              Our small pottery workshop began as a simple passion project,
+              rooted in a love for handmade artistry and traditional
+              craftsmanship. What started with a single wheel and a few lumps of
+              clay has grown into a cozy creative space where ideas take shape
+              and stories are told through every piece. Inspired by timeless
+              techniques and the beauty of natural materials, we’ve built a
+              place where both beginners and experienced artists can come
+              together, share their skills, and celebrate the art of pottery.
+              Each creation reflects our journey—shaped by hand, fired with
+              care, and made to be cherished. <br />
+              <br />
+              Over the years, our workshop has become more than just a place to
+              create—it’s a community. Friends, families, and curious visitors
+              gather here to learn, connect, and experience the joy of working
+              with clay. From intimate masterclasses to collaborative projects,
+              we believe in the power of handmade art to bring people together
+              and spark creativity in unexpected ways. <br />
+              <br />
+              Every piece that leaves our studio carries a bit of our story,
+              blending tradition with personal expression. Whether it’s a simple
+              cup or an intricate vase, our ceramics are crafted to be both
+              beautiful and functional, adding warmth and authenticity to any
+              space.
             </p>
           </div>
         </div>
@@ -173,36 +157,6 @@
             </form>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="works">
-      <div class="container">
-        <h2 class="title-h2">check out our works</h2>
-        <div class="works__wrapper">
-          <div class="swiper works__slider">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <img src="/src/img/works/tea-1.jpg" alt="tea" />
-              </div>
-              <div class="swiper-slide">
-                <img src="/src/img/works/tea-2.jpg" alt="tea-2" />
-              </div>
-              <div class="swiper-slide">
-                <img src="/src/img/works/tea-3.jpg" alt="tea-3" />
-              </div>
-              <div class="swiper-slide">
-                <img src="/src/img/works/tea-3.jpg" alt="tea-3" />
-              </div>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-          <button class="icon-left-open works__slider-nav"></button>
-          <button class="icon-right-open works__slider-nav"></button>
-        </div>
-        <!-- <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div> -->
       </div>
     </section>
     <footer class="footer">

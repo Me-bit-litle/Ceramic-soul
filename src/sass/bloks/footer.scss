@@ -1,13 +1,15 @@
 @use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
+@use "/src/sass/ui/titles.scss" as *;
 
 .footer {
     background-color: $dark;
     padding: 50px 0 50px 0;
     &__title {
-        color: $light;
         text-align: left;
         font-weight: 400;
         font-size: 16px;
+        color: $light;
     }
     &__text {
         margin-top: 40px;
