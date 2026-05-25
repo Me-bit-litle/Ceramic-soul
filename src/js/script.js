@@ -1,5 +1,6 @@
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
+import JustValidate from 'just-validate';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -61,3 +62,75 @@ try {
 
 contents.forEach((c, i) => (c.style.display = i === 0 ? "flex" : "none"));
 } catch (e) {}
+
+try {
+const validator = new JustValidate("form", {submitFormAutomatically: true});
+
+validator
+  .addField('#name', [
+    {
+      rule: 'required',
+      errorMessage: 'Please fill the name',
+    },
+    {
+      rule: 'minLength',
+      value: 2,
+      errorMessage: 'Min 2 char. Pleeeeease write more whan 2 char',
+    }
+  ])
+  .addField('#email', [
+    {
+      rule: 'required',
+    },
+    {
+      rule: 'email',
+    }
+  ])
+  .addField('#question', [
+    {
+      rule: 'required',
+    },
+    {
+      rule: 'minLength',
+      value: 5,
+    }
+  ], 
+  {
+    errorsContainer: document.querySelector('#question').parentElement.querySelector('.error-message'),
+  }
+)
+  .addField('#checkbox', [
+    {
+      rule: 'required',
+    },
+  ],
+  {
+    errorsContainer: document.querySelector('#checkbox').parentElement.querySelector('.checkbox-error-message'),
+  }
+);
+} catch (e) {
+
+}
+
+try {
+const validFooterSkript = new JustValidate("#form", {submitFormAutomatically: true});
+
+validFooterSkript
+  .addField('#footer__email', [
+    {
+      rule: 'email',
+      errorMessage: 'Please fill gmail',
+    },
+  ])
+  .addField('#footer__checkbox', [
+    {
+      rule: 'required',
+    },
+  ],
+  {
+    errorsContainer: document.querySelector('#checkbox').parentElement.querySelector('.checkbox-error-message'),
+  }
+);
+} catch (e) {
+
+}

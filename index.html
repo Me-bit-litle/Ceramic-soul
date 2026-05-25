@@ -160,6 +160,8 @@
                 placeholder="Question"
                 required
               ></textarea>
+              <div class="error-message"></div>
+
               <label class="form__label form__check-block" for="checkbox">
                 <input
                   class="form__check-box"
@@ -169,6 +171,8 @@
                 />
                 I agree with the <a href="#">terms</a>
               </label>
+              <div class="checkbox-error-message"></div>
+
               <button class="form__btn btn-send">send request</button>
             </form>
           </div>
@@ -214,7 +218,7 @@
               <p class="footer__text">
                 Keep up to date with news and promotions
               </p>
-              <form action="#">
+              <form id="form" action="#">
                 <fieldset class="footer__fieldset">
                   <div class="footer__input-block">
                     <input
@@ -227,6 +231,8 @@
                     />
                   </div>
                 </fieldset>
+                <div class="checkbox-error-message"></div>
+
                 <label class="footer__label footer__check-block" for="checkbox">
                   <input
                     class="footer__check-box"

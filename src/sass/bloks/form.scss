@@ -3,6 +3,11 @@
 
 .form {
     padding-top: 60px;
+    .just-validate-error-field {
+        border: none;
+        outline: 1px solid $ui-error;
+
+    }
     position: relative;
     &__vase {
        display: none;
@@ -79,6 +84,7 @@
     &__check-box {
         margin-right: 15px;
     }
+    
 }
 
 @media screen and (min-width: 768px) {
