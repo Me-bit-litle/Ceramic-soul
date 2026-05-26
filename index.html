@@ -218,26 +218,28 @@
               <p class="footer__text">
                 Keep up to date with news and promotions
               </p>
-              <form id="form" action="#">
+              <form id="footer__form" action="#">
                 <fieldset class="footer__fieldset">
                   <div class="footer__input-block">
                     <input
                       class="footer__input"
                       type="email"
-                      id="email"
-                      name="email"
+                      id="footer__email"
                       placeholder="Enter your e-mail"
                       required
                     />
                   </div>
+                  <div class="checkbox-error-message"></div>
                 </fieldset>
-                <div class="checkbox-error-message"></div>
 
-                <label class="footer__label footer__check-block" for="checkbox">
+                <label
+                  class="footer__label footer__check-block"
+                  for="footer__checkbox"
+                >
                   <input
                     class="footer__check-box"
                     type="checkbox"
-                    id="checkbox"
+                    id="footer__checkbox"
                     required
                   />
                   I agree with the <a href="#">terms</a>
@@ -287,6 +289,7 @@
         <p class="footer__date">&copy;Copyright 2025, Ceramic soul</p>
       </div>
     </footer>
+
     <script type="module" src="/src/js/script.js"></script>
   </body>
 </html>

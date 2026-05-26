@@ -64,7 +64,7 @@ contents.forEach((c, i) => (c.style.display = i === 0 ? "flex" : "none"));
 } catch (e) {}
 
 try {
-const validator = new JustValidate("form", {submitFormAutomatically: true});
+const validator = new JustValidate("form");
 
 validator
   .addField('#name', [
@@ -107,20 +107,36 @@ validator
   {
     errorsContainer: document.querySelector('#checkbox').parentElement.querySelector('.checkbox-error-message'),
   }
-);
+)
+.onSuccess((event) => {
+			const form = event.currentTarget;
+			const formData = new FormData(form);
+
+			fetch("https://httpbin.org/post", {
+				method: "POST",
+				body: formData,
+			})
+				.then((res) => res.json())
+				.then((data) => {
+					console.log("Success", data);
+					form.reset();
+				});
+})
 } catch (e) {
 
 }
 
 try {
-const validFooterSkript = new JustValidate("#form", {submitFormAutomatically: true});
+const validFooter = new JustValidate("#footer__form", {submitFormAutomatically: true});
 
-validFooterSkript
-  .addField('#footer__email', [
+validFooter
+   .addField('#footer__email', [
+    {
+      rule: 'required',
+    },
     {
       rule: 'email',
-      errorMessage: 'Please fill gmail',
-    },
+    }
   ])
   .addField('#footer__checkbox', [
     {
@@ -128,7 +144,7 @@ validFooterSkript
     },
   ],
   {
-    errorsContainer: document.querySelector('#checkbox').parentElement.querySelector('.checkbox-error-message'),
+    errorsContainer: document.querySelector('#footer__checkbox').parentElement.querySelector('.checkbox-error-message'),
   }
 );
 } catch (e) {

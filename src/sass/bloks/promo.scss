@@ -24,6 +24,22 @@
     &__potter {
         display: none;
     }
+    &__cta {
+        // animation-name: slideIn;
+        // animation-duration: 3s;
+        animation: slideIn 3s;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
 }
 
 @media screen and (min-width: 768px) {

@@ -6,6 +6,11 @@
     background-color: $dark;
     margin-top: 60px;
     padding: 50px 0 50px 0;
+    .just-validate-error-field {
+        border: none;
+        outline: 1px solid $ui-error;
+        color: $ui-error;
+    }
     &__title {
         text-align: left;
         font-weight: 400;

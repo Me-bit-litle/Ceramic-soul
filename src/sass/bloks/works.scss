@@ -3,6 +3,9 @@
 .works {
     padding-top: 60px;
     margin-bottom: 60px;
+    &__wrapper {
+        position: relative;
+    }
     &__slider {
         margin-top: 40px;
     }
@@ -13,7 +16,7 @@
         display: none;
     }
     .swiper-pagination {
-        bottom: -1770px;
+        bottom: -40px;
     }
     .swiper-pagination-bullet {
         width: 10px;
