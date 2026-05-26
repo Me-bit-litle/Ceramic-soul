@@ -84,7 +84,10 @@
     &__check-box {
         margin-right: 15px;
     }
-    
+    .animation__vase {
+        animation: slideOrb 3s;
+        animation-iteration-count: infinite;
+    }
 }
 
 @media screen and (min-width: 768px) {

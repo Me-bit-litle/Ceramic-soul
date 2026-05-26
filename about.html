@@ -103,7 +103,11 @@
       </div>
     </section>
     <section class="form">
-      <img src="/src/img/form/vase.png" alt="vase" class="form__vase" />
+      <img
+        src="/src/img/form/vase.png"
+        alt="vase"
+        class="form__vase animation__vase"
+      />
       <div class="container">
         <h2 class="title-h2 form__title">get in touch</h2>
         <div class="pure-g form__wrapper">
@@ -144,6 +148,8 @@
                 placeholder="Question"
                 required
               ></textarea>
+              <div class="error-message"></div>
+
               <label class="form__label form__check-block" for="checkbox">
                 <input
                   class="form__check-box"
@@ -153,6 +159,8 @@
                 />
                 I agree with the <a href="#">terms</a>
               </label>
+              <div class="checkbox-error-message"></div>
+
               <button class="form__btn btn-send">send request</button>
             </form>
           </div>
@@ -183,24 +191,28 @@
               <p class="footer__text">
                 Keep up to date with news and promotions
               </p>
-              <form action="#">
+              <form id="footer__form" action="#">
                 <fieldset class="footer__fieldset">
                   <div class="footer__input-block">
                     <input
                       class="footer__input"
                       type="email"
                       id="footer__email"
-                      name="email"
                       placeholder="Enter your e-mail"
                       required
                     />
                   </div>
+                  <div class="checkbox-error-message"></div>
                 </fieldset>
-                <label class="footer__label footer__check-block" for="checkbox">
+
+                <label
+                  class="footer__label footer__check-block"
+                  for="footer__checkbox"
+                >
                   <input
                     class="footer__check-box"
                     type="checkbox"
-                    id="checkbox"
+                    id="footer__checkbox"
                     required
                   />
                   I agree with the <a href="#">terms</a>

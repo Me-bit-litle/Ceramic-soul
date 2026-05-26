@@ -123,28 +123,32 @@
         <div class="pure-g footer__wrapper">
           <div class="pure-u-1 pure-u-xl-1-3 pure-u-xxl-1-3">
             <div class="footer__wrapper-newsletter">
-              <h3 class="title-h3 footer__title">newsletter</h3>
+              <h3 class="footer__title title-h3">newsletter</h3>
               <p class="footer__text">
                 Keep up to date with news and promotions
               </p>
-              <form action="#">
+              <form id="footer__form" action="#">
                 <fieldset class="footer__fieldset">
                   <div class="footer__input-block">
                     <input
                       class="footer__input"
                       type="email"
                       id="footer__email"
-                      name="email"
                       placeholder="Enter your e-mail"
                       required
                     />
                   </div>
+                  <div class="checkbox-error-message"></div>
                 </fieldset>
-                <label class="footer__label footer__check-block" for="checkbox">
+
+                <label
+                  class="footer__label footer__check-block"
+                  for="footer__checkbox"
+                >
                   <input
                     class="footer__check-box"
                     type="checkbox"
-                    id="checkbox"
+                    id="footer__checkbox"
                     required
                   />
                   I agree with the <a href="#">terms</a>
