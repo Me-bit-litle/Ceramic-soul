@@ -6,13 +6,15 @@
     <meta name="description" content="Website for Ceramic soul brand" />
     <meta name="author" content="Awesome student" />
     <title>blog</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-A_W1hML8.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,400&display=swap"
       rel="stylesheet"
     />
+    <script type="module" crossorigin src="/assets/script-LdBxvt-L.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/script-BnQvB2Hi.css">
   </head>
   <body>
     <section class="blog">
@@ -26,19 +28,25 @@
             <nav class="header__menu-nav">
               <ul>
                 <li>
-                  <a href="/catalog" class="header__menu-link">catalog</a>
+                  <a
+                    href="http://localhost:5173/catalog"
+                    class="header__menu-link"
+                    >catalog</a
+                  >
                 </li>
-                <li><a href="/blog" class="header__menu-link">blog</a></li>
                 <li>
-                  <a href="/about" class="header__menu-link">about</a>
+                  <a href="http://localhost:5173/blog" class="header__menu-link"
+                    >blog</a
+                  >
                 </li>
+                <li><a href="#" class="header__menu-link">about</a></li>
               </ul>
             </nav>
           </div>
           <div class="header__top">
             <div class="burger"><span></span><span></span><span></span></div>
             <a href="#" class="header__logo">
-              <img src="/src/logo/logo.png" alt="logo" />
+              <img src="/assets/logo-CiQoG76i.png" alt="logo" />
             </a>
             <div class="header__icons">
               <a href=""><span class="icon-search"></span></a
@@ -48,10 +56,16 @@
           <nav class="header__nav">
             <ul>
               <li>
-                <a href="/catalog" class="header__link">catalog</a>
+                <a href="http://localhost:5173/catalog" class="header__link"
+                  >catalog</a
+                >
               </li>
-              <li><a href="/blog" class="header__link">blog</a></li>
-              <li><a href="/about" class="header__link">about</a></li>
+              <li>
+                <a href="http://localhost:5173/blog" class="header__link"
+                  >blog</a
+                >
+              </li>
+              <li><a href="#" class="header__link">about</a></li>
             </ul>
           </nav>
         </div>
@@ -61,7 +75,7 @@
           <div class="pure-u-xl-1-2 blog__card">
             <div class="pure-g blog__data">
               <div class="pure-u-1 pure-u-md-1-2">
-                <img class="blog__img" src="src/img/form/tea.jpg" alt="tea" />
+                <img class="blog__img" src="/assets/tea-DeOr11j9.jpg" alt="tea" />
               </div>
               <div class="pure-u-1 pure-u-md-1-2 blog__data-column">
                 <h3 class="title-h3 blog__title-card">pottery secrets</h3>
@@ -83,7 +97,7 @@
               <div class="pure-u-1 pure-u-md-1-2">
                 <img
                   class="blog__img"
-                  src="src/img/works/tea-2.jpg"
+                  src="/assets/tea-2-CiZGhhkc.jpg"
                   alt="tea"
                 />
               </div>
@@ -139,7 +153,7 @@
                     id="footer__checkbox"
                     required
                   />
-                  I agree with the <a href="https://chatgpt.com/">terms</a>
+                  I agree with the <a href="#">terms</a>
                 </label>
                 <button class="btn-footer footer__btn">submit</button>
               </form>
@@ -151,12 +165,12 @@
             <div class="pure-u-1 footer__wrapper-title">
               <div class="footer__nav">
                 <h3 class="title-h3 footer__title">discover</h3>
-                <a class="footer__links" href="/about">About Us</a>
-                <a class="footer__links" href="/blog">Blog</a>
+                <a class="footer__links" href="#">About Us</a>
+                <a class="footer__links" href="#">Blog</a>
               </div>
               <div class="footer__nav">
                 <h3 class="title-h3 footer__title">shopping</h3>
-                <a class="footer__links" href="/catalog">Catalog</a>
+                <a class="footer__links" href="#">Catalog</a>
               </div>
             </div>
             <div class="pure-u-1 footer__information">
@@ -171,17 +185,13 @@
               <h3 class="title-h3 footer__title">follow us</h3>
               <div class="footer__cta">
                 <div class="footer__contacts">
-                  <a
-                    href=" https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Duk_UA"
-                  >
-                    <span class="icon-facebook"></span>
-                  </a>
-                  <a href="https://www.instagram.com/">
-                    <span class="icon-instagram"></span>
-                  </a>
-                  <a href="https://ru.pinterest.com/">
-                    <span class="icon-pinterest-circled"></span>
-                  </a>
+                  <span class="icon-facebook"></span>
+                </div>
+                <div class="footer__contacts">
+                  <span class="icon-instagram"></span>
+                </div>
+                <div class="footer__contacts">
+                  <span class="icon-pinterest-circled"></span>
                 </div>
               </div>
             </div>
@@ -190,6 +200,5 @@
         <p class="footer__date">&copy;Copyright 2025, Ceramic soul</p>
       </div>
     </footer>
-    <script type="module" src="/src/js/script.js"></script>
   </body>
 </html>

@@ -103,6 +103,10 @@
     &__contacts {
         font-size: 20px;
         color: $light;
+        a {
+            text-decoration: none;
+            color: $light;
+        }
     }
     &__date {
         margin-top: 40px;
