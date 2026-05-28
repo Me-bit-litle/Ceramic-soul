@@ -1,7 +1,7 @@
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { defineConfig } from "vite";
-import viteImagemin from "vite-plugin-imagemin";
+import { defineConfig } from 'vite'
+import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -17,32 +17,19 @@ export default defineConfig({
 		},
 	},
 	plugins: [
-		viteImagemin({
-			gifsicle: {
-				optimizationLevel: 7,
-				interlaced: false,
-			},
-			optipng: {
-				optimizationLevel: 7,
-			},
-			mozjpeg: {
-				quality: 70,
-			},
-			pngquant: {
-				quality: [0.8, 0.9],
-				speed: 4,
-			},
-			svgo: {
-				plugins: [
-					{
-						name: "removeViewBox",
-					},
-					{
-						name: "removeEmptyAttrs",
-						active: false,
-					},
-				],
-			},
-		}),
-	],
+    ViteImageOptimizer({
+      png: {
+        quality: 80
+      },
+      jpeg: {
+        quality: 80
+      },
+      jpg: {
+        quality: 80
+      },
+      webp: {
+        lossless: false
+      }
+    })
+  ]
 });
